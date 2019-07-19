@@ -25,7 +25,7 @@ SECRET_KEY = 'u!%qku#68-7(c00540xbkpp$803c-qg+fupwrr%h9semn1s5v7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -151,13 +151,6 @@ if os.getcwd() == '/app':
     ALLOWED_HOSTS = ['learning-log-ylfw.herokuapp.com']
 
     DEBUG = False
-    
-    # 安全警告：不要在在线环境中启用调试！
-    DEBUG = False
-
-    ALLOWED_HOSTS = ['localhost']
-
-
 
     # 静态资产配置
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
